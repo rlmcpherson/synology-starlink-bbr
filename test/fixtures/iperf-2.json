@@ -1,0 +1,10 @@
+{
+  "intervals": [
+    {"sum": {"bits_per_second": 12000000}},
+    {"sum": {"bits_per_second": 800000}}
+  ],
+  "end": {
+    "sum_sent": {"retransmits": 80},
+    "sum_received": {"bits_per_second": 7400000}
+  }
+}

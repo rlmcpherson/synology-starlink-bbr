@@ -1,0 +1,5 @@
+ Type    Device   Target   Source
+-------------------------------------------------------------------------------
+ block   disk     hda      /dev/iscsi1
+ file    cdrom    hdb      /volume1/homes/admin/starlink-proxy/starlink-proxy-seed.iso
+ file    cdrom    hdc      -

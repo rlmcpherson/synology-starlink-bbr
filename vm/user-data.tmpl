@@ -1,0 +1,21 @@
+#cloud-config
+hostname: __HOSTNAME__
+users:
+  - name: __VM_USER__
+    groups: [sudo]
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    shell: /bin/bash
+    lock_passwd: true
+    ssh_authorized_keys:
+      - __SSH_PUBKEY__
+ssh_pwauth: false
+disable_root: true
+package_update: true
+package_upgrade: true
+packages:
+  - haproxy
+  - iperf3
+  - qemu-guest-agent
+  - unattended-upgrades
+runcmd:
+  - [systemctl, enable, --now, qemu-guest-agent]

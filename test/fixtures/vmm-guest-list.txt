@@ -1,0 +1,19 @@
+[Line 295] Exec WebAPI:  api=SYNO.Virtualization.API.Guest, version=1, method=list, param={}, runner=SYSTEM_ADMIN
+{
+   "data" : {
+      "guests" : [
+         {
+            "guest_id" : "11111111-0000-0000-0000-000000000000",
+            "guest_name" : "other-vm",
+            "status" : "running"
+         },
+         {
+            "guest_id" : "5a0891b7-7fcf-4eb8-b3a8-ba1c0fbc51c0",
+            "guest_name" : "starlink-proxy",
+            "status" : "running"
+         }
+      ]
+   },
+   "httpd_restart" : false,
+   "success" : true
+}
